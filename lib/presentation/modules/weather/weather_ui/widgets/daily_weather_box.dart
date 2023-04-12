@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nouvelle_collab_exercice/presentation/modules/weather/weather_ui/widgets/weather_icon.dart';
+import 'package:open_weather_app/presentation/modules/weather/weather_ui/widgets/weather_icon.dart';
 
 import '../../../../../theme/app_colors.dart';
 
@@ -31,7 +31,7 @@ class _AnimatedListItemweatherState extends State<DailyWeatherBox>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((Duration d) {
+    WidgetsBinding.instance.addPostFrameCallback((Duration d) {
       setState(() {
         _lock = true;
       });

@@ -1,3 +1,7 @@
+open_weather_app
+2.18
+file:///Users/macbookpro/Android/Open_weather_map_app/Open_weather_map_app/
+file:///Users/macbookpro/Android/Open_weather_map_app/Open_weather_map_app/lib/
 async
 2.14
 file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/
@@ -38,6 +42,10 @@ file
 2.12
 file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.4/
 file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.4/lib/
+floating_bottom_navigation_bar
+2.12
+file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/floating_bottom_navigation_bar-1.5.2/
+file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/floating_bottom_navigation_bar-1.5.2/lib/
 flutter_lints
 2.17
 file:///Users/macbookpro/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/
@@ -174,8 +182,4 @@ flutter_test
 2.17
 file:///Users/macbookpro/FlutterDev/flutter/packages/flutter_test/
 file:///Users/macbookpro/FlutterDev/flutter/packages/flutter_test/lib/
-nouvelle_collab_exercice
-2.18
-file:///Users/macbookpro/android/Open_weather_map_app/Open_weather_map_app/
-file:///Users/macbookpro/android/Open_weather_map_app/Open_weather_map_app/lib/
 2

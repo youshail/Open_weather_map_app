@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macbookpro/AndroidStudioProjects/open_weather_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/macbookpro/Android/Open_weather_map_app/Open_weather_map_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/macbookpro/AndroidStudioProjects/open_weather_flutter/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/macbookpro/Android/Open_weather_map_app/Open_weather_map_app/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

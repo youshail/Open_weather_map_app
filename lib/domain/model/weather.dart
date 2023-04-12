@@ -10,6 +10,7 @@ class WeatherData {
     required this.message,
     required this.cnt,
     required this.list,
+    required this.city,
 
   });
 
@@ -17,6 +18,7 @@ class WeatherData {
   int? message;
   int? cnt;
   List<ListElement>? list;
+  City? city;
 
 
 
@@ -26,6 +28,7 @@ class WeatherData {
       message: weatherDto.message,
       cnt: weatherDto.cnt,
       list: weatherDto.list,
+      city: weatherDto.city
     );
   }
 

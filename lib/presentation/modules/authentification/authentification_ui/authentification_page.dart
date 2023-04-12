@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../authentification_state_management/authentification_controller.dart';
-
+import '../../../../helpers/app_field_validation.dart';
 class AuthentificationPage extends GetView<AuthentificationController>{
 
 
 
-  final scaffoldKey = GlobalKey<ScaffoldState>();
+  final scaffoldKeyAuthentification = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class AuthentificationPage extends GetView<AuthentificationController>{
         return false;
       },
       child: Scaffold(
-          key: scaffoldKey,
+          key: scaffoldKeyAuthentification,
           backgroundColor: Colors.white,
 
           appBar: AppBar(
@@ -44,12 +44,12 @@ class AuthentificationPage extends GetView<AuthentificationController>{
 
                             controller: controller.emailFieldController,
                             keyboardType: TextInputType.emailAddress,
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Veuillez saisir votre e-mail';
-                              }
-                              return null;
-                            },
+                            validator: FieldValidator.compose([
+                              FieldValidator.required(
+                                  "Veuillez saisir votre e-mail"),
+                              FieldValidator.email("L'adresse mail saisie est incorrecte "),
+                            ]),
+
                             decoration: const InputDecoration(
                               border: OutlineInputBorder(),
                               labelText: 'Email',
@@ -61,12 +61,8 @@ class AuthentificationPage extends GetView<AuthentificationController>{
                           child: TextFormField(
                             controller: controller.passwordFieldController,
                             keyboardType: TextInputType.visiblePassword,
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Veuillez entrer votre mot de passe pour continuer';
-                              }
-                              return null;
-                            },
+                            validator: FieldValidator.required(
+                              "Veuillez entrer votre mot de passe pour continuer"),
                             decoration: const InputDecoration(
                               border: OutlineInputBorder(),
                               labelText: 'Password',
@@ -78,15 +74,17 @@ class AuthentificationPage extends GetView<AuthentificationController>{
                   ),
                 ),
               ),
-              Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                  child:  ElevatedButton(
-                    style: raisedButtonStyle,
-                    child: const Text('VALIDER'),
-                    onPressed: () {
-                      controller.getValidateAuthentification();
-                    },
-                  ),
+
+              ElevatedButton(
+                onPressed: () {
+                  controller.getValidateAuthentification();
+                },
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.indigoAccent,
+                    fixedSize: const Size(300, 50),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20))),
+                child: const Text('VALIDER'),
               ),
               const SizedBox(height: 18),
 
@@ -106,7 +104,7 @@ class AuthentificationPage extends GetView<AuthentificationController>{
     minimumSize: const Size(88, 36),
     padding: const EdgeInsets.symmetric(horizontal: 16),
     shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.all(Radius.circular(2)),
+      borderRadius: BorderRadius.all(Radius.circular(20)),
     ),
   );
 

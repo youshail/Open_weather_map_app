@@ -1,4 +1,4 @@
-# nouvelle_collab_exercice
+# open_weather_app
 
 A new Flutter project.
 

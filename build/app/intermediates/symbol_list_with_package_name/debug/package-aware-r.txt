@@ -1,4 +1,4 @@
-com.nouvelle.collab.exercice.nouvelle_collab_exercice
+com.OpenWeathe.app
 attr activityAction
 attr activityName
 attr alpha

@@ -7,11 +7,14 @@ import 'package:intl/intl.dart';
 
 import '../../../../data/repository/weather_repository_imp.dart';
 import '../../../../domain/model/weather.dart';
+import '../../../routes/app_pages.dart';
 
 class WeatherController extends GetxController{
 
 
 
+
+  
   final WeatherRepositoryImp weatherRepository = WeatherRepositoryImp();
 
   /// Une instance Rx nullable de WeatherData. La valeur initiale est null
@@ -20,6 +23,8 @@ class WeatherController extends GetxController{
   /// obtenir arguments["email"]
   String userEmail = Get.arguments["email"];
   String text ="BIENVENUE ";
+
+  RxInt index = 0.obs;
 
 
 
@@ -43,6 +48,8 @@ class WeatherController extends GetxController{
     return updatedDt;
 
   }
+
+
 
 
 

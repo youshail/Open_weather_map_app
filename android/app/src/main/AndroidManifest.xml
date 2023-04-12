@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nouvelle.collab.exercice.nouvelle_collab_exercice">
+    package="com.OpenWeathe.app">
    <application
-        android:label="nouvelle_collab_exercice"
+        android:label="open_weather_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

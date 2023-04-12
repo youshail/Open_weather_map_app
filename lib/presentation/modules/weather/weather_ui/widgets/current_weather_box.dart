@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nouvelle_collab_exercice/presentation/modules/weather/weather_ui/widgets/weather_icon.dart';
+import 'package:open_weather_app/presentation/modules/weather/weather_ui/widgets/weather_icon.dart';
 
 import '../../../../../theme/app_colors.dart';
 

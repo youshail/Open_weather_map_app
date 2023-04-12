@@ -16,7 +16,7 @@ class AuthentificationController extends GetxController{
 
   /// Form Key
 
-  GlobalKey<FormState>  FormsKey = GlobalKey<FormState>();
+  late GlobalKey<FormState>  FormsKey;
 
 
   getValidateAuthentification(){
@@ -44,12 +44,15 @@ class AuthentificationController extends GetxController{
     emailFieldController.dispose();
     passwordFieldController.dispose();
 
+
   }
 
   @override
   void onInit() {
+    FormsKey = GlobalKey<FormState>();
     emailFieldController = TextEditingController(text: "");
     passwordFieldController = TextEditingController(text: "");
 
   }
+
 }
