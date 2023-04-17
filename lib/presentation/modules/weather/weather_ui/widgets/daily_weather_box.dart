@@ -25,7 +25,6 @@ class _AnimatedListItemweatherState extends State<DailyWeatherBox>
   bool _lock = false;
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 
   @override
